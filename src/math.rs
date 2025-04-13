@@ -7,7 +7,6 @@
 // Use crate:: imports for local modules
 use crate::platform::{Rect, Cursor};
 
-use std::cmp::Ordering; // Required for sorting logic
 use std::fmt; // Required for formatting Hit struct
 
 // --- Core Game Physics / Scaling Constants ---
