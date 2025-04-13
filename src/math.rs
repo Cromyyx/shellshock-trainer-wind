@@ -26,7 +26,7 @@ const SIMULATION_DT: f64 = 0.01;
 // Maximum number of simulation steps to run before giving up (prevents infinite loops).
 const SIMULATION_MAX_STEPS: u32 = 2000;
 // Radius around the target (in pixels) considered a "hit".
-const HIT_TOLERANCE_PX: f64 = 5.0; // Needs tuning based on game's hit detection
+const HIT_TOLERANCE_PX: f64 = 3.0; // Needs tuning based on game's hit detection
 // Conversion factor from user wind input (-100 to 100) to horizontal acceleration (m/s^2).
 // CRITICAL for wind effect - Needs extensive tuning based on game testing
 const WIND_SCALING_FACTOR: f64 = 0.0125; // Starting guess - **TUNE THIS**
