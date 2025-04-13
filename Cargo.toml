@@ -2,6 +2,8 @@
 name = "shellshock-trainer"
 version = "0.1.0"
 authors = ["mschorsch <matthias.schorsch@gmx.de>"]
+# Add this line (choose 2021 or 2024)
+edition = "2021"
 
 # [target.'cfg(unix)'.dependencies] 
 
