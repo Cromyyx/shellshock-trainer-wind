@@ -20,6 +20,8 @@ Example:
 1. Move the mouse over your tank and press '1'.
 2. Move the mouse over the enemy tank and press '2'.
 3. Press '3'.
+4. Input -30
+5. Enter
 
 # Installation (Windows only)
 
