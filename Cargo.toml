@@ -1,15 +1,26 @@
+# Cargo.toml
+
 [package]
 name = "shellshock-trainer"
 version = "0.1.0"
 authors = ["mschorsch <matthias.schorsch@gmx.de>"]
-# Add this line (choose 2021 or 2024)
-edition = "2021"
+edition = "2021" # Assumes you updated toolchain
 
-# [target.'cfg(unix)'.dependencies] 
+# [target.'cfg(unix)'.dependencies]
 
 [target.'cfg(windows)'.dependencies]
-winapi = "0.2.7"
-user32-sys = "0.2.0"
+# Update winapi to 0.3 and specify correct features for that version
+winapi = { version = "0.3", features = [
+    "winuser",        # For FindWindowW, GetAsyncKeyState, GetCursorPos, ScreenToClient, GetClientRect
+    "windef",         # For HWND, RECT, POINT
+    "libloaderapi",   # Often implicitly needed? (Good to include)
+    "processenv",     # For GetStdHandle
+    "wincon",         # For FlushConsoleInputBuffer
+    "winbase",        # STD_INPUT_HANDLE constant is likely here in 0.3
+    "handleapi",      # For INVALID_HANDLE_VALUE, IsNull checks
+    "errhandlingapi", # <<<--- ADD THIS FEATURE for GetLastError
+]}
+# user32-sys = "0.2.0" # REMOVE THIS LINE (if you haven't already)
 
 [profile.release]
 opt-level = 3
