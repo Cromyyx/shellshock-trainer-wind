@@ -10,13 +10,13 @@ My main interest is not the game itself. The goal of this project was to improve
 1. Execute the trainer (installation see below).
 2. Start "Shellshock Live" (the trainer automatically detects a running instance of "Shellshock Live").
 3. There are four hardcoded keys
-    * Key 1 (save current mouse position as position 1)
-    * Key 2 (save current mouse position as position 2)
-    * Key 3 (Add Wind variable *optional*)
-    * Key 4 (calculate different angle/speed combinations to hit the target (position 2))
-    * Key 5 (clear positions)
-    * Key 6 (switch calculation mode (angle/velocity))
-    * Key 7 (cach game window size *do while ingame*)
+    * Key 1 (Set Source Position (Your Tank))
+    * Key 2 (Set Target Position (Enemy Tank))
+    * Key 3 *Optional*: (Set Wind Strength (via console input))
+    * Key 4 (Calculate Hits (using stored wind & dimensions))
+    * Key 5 (Clear Positions and Wind)
+    * Key 6 (Switch Mode (Angle/Velocity))
+    * Key 7 (Cache Game Window Dimensions (Press while game is active)
 
 Example:
 1. Press '7' to cach window size (only have to do once per session or if game window size is changed).
