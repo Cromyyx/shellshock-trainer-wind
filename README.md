@@ -12,16 +12,18 @@ My main interest is not the game itself. The goal of this project was to improve
 3. There are four hardcoded keys
     * Key 1 (save current mouse position as position 1)
     * Key 2 (save current mouse position as position 2)
-    * Key 3 (calculate different angle/speed combinations to hit the target (position 2)) (now also must input Wind (-100 - 100)
-    * Key 4 (clear positions)
-    * Key 5 (switch calculation mode) #don't know what this does tbh
+    * Key 3 (Add Wind variable *optional*)
+    * Key 4 (calculate different angle/speed combinations to hit the target (position 2))
+    * Key 5 (clear positions)
+    * Key 6 (switch calculation mode (angle/velocity))
+    * Key 7 (cach game window size *do while ingame*)
 
 Example:
-1. Move the mouse over your tank and press '1'.
-2. Move the mouse over the enemy tank and press '2'.
-3. Press '3'.
-4. Input -30
-5. Enter
+1. Press '7' to cach window size (only have to do once per session or if game window size is changed).
+2. Move the mouse over your tank and press '1'.
+3. Move the mouse over the enemy tank and press '2'.
+4. *Optional* Press '3' and input current wind and press 'Enter'.
+5. Press '4' to start caclulation.
 
 # Installation (Windows only)
 
